@@ -1,0 +1,26 @@
+﻿<Window x:Class="KR2RPM5.View.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KR2RPM5.View"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="550">
+	<Grid Margin="15" Background="Tan">
+		<StackPanel Background="OldLace" VerticalAlignment="Center">
+			<TextBlock Text="Вход в систему" FontFamily="Century Gotic" FontSize="18" FontWeight="Bold" Margin="0,0,0,20"/>
+
+			<Label Content="Логин:" FontFamily="Century Gotic"/>
+			<TextBox x:Name="txtLogin" Height="25" Margin="0,0,0,10"/>
+
+			<Label Content="Пароль:" FontFamily="Century Gotic"/>
+			<PasswordBox x:Name="txtPassword" Height="25" Margin="0,0,0,15"/>
+
+			<Button Content="Войти" FontFamily="Century Gotic" Height="30" Click="LoginButton_Click" Background="Moccasin"/>
+
+			<TextBlock Margin="0,10,0,0" HorizontalAlignment="Center">
+                <Button Click="RegisterButton_Click" Content="Зарегистрироваться" Background="Moccasin" FontStyle="Italic" FontFamily="Century Gotic"></Button>
+			</TextBlock>
+		</StackPanel>
+	</Grid>
+</Window>

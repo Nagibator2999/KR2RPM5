@@ -1,0 +1,28 @@
+﻿<Window x:Class="KR2RPM5.View.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KR2RPM5.View"
+        mc:Ignorable="d"
+        Title="RegisterWindow" Height="450" Width="500">
+	<Grid Margin="15" Background="OldLace">
+		<StackPanel>
+			<TextBlock Text="Регистрация" FontFamily="Century Gotic" FontSize="18" FontWeight="Bold" Margin="0,0,0,20"/>
+
+			<Label Content="Логин:" FontFamily="Century Gotic"/>
+			<TextBox x:Name="txtLogin" Height="25" Margin="0,0,0,10"/>
+
+			<Label Content="Пароль:" FontFamily="Century Gotic"/>
+			<PasswordBox x:Name="txtPassword" Height="25" Margin="0,0,0,10"/>
+
+			<Label Content="ФИО:" FontFamily="Century Gotic"/>
+			<TextBox x:Name="txtFullName" Height="25" Margin="0,0,0,10"/>
+
+			<Label Content="Телефон:" FontFamily="Century Gotic"/>
+			<TextBox x:Name="txtPhone" Height="25" Margin="0,0,0,15"/>
+
+			<Button Content="Зарегистрироваться" Background="Tan" FontFamily="Century Gotic" Height="30" Click="RegisterButton_Click"/>
+		</StackPanel>
+	</Grid>
+</Window>
